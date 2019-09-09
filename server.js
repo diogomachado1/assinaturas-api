@@ -11,7 +11,7 @@ const authRoutes = require('./server/routes/auth.routes');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
 require('dotenv/config');
-const MONGO_URL=process.env.MONGODB_URI || 'mongodb://localhost:27017/assinaturas'
+const MONGO_URL=process.env.MONGODB_URI || 'mongodb://db/assinaturas'
 //'mongodb://db/assinaturas'
 const server = express();
 mongoose.connect(MONGO_URL, {useNewUrlParser: true, useFindAndModify: false });
